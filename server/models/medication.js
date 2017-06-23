@@ -12,9 +12,21 @@ function Medication(id) {
             }
         } else if (id >= 100 && id < 200) {
             return {
-                brand: "Brand X",
-                packaging: "Blister Pack",
-                amount: "1000mg"
+                brand: "Viekira Pak",
+                packaging: "XR",
+                amount: ""
+            }
+        } else if (id >= 200 && id < 300) {
+            return {
+                brand: "Kaletra",
+                packaging: "Oral Solution",
+                amount: "80mg"
+            }    
+        } else if (id >= 300 && id < 400) {
+            return {
+                brand: "Androgel",
+                packaging: "1.62%",
+                amount: ""
             }
         }
     }
