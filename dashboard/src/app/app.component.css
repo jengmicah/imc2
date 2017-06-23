@@ -1,0 +1,13 @@
+.title {
+    margin-bottom: 2rem;
+    background-color: #eceeef;
+    border-bottom-style: outset;
+    border-left-style: groove;
+    border-right-style: groove;
+    padding-left: 10px;
+}
+
+.dashboard {
+    padding-left: 10px;
+    padding-right: 10px;
+}

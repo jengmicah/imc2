@@ -1,0 +1,17 @@
+<div class="container" *ngIf="medication">
+  <h3>Timeline</h3>
+  <ul class="timeline">
+    <li *ngFor="let event of medication.event_log; let isOdd=odd; let isEven=even" [class.timeline-inverted]="isOdd">
+      <div class="timeline-badge" ngClass="{{getSeverityClass(event.code)}}"></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title"><img src="/assets/images/state_{{event.code}}.png" width="75"/></h4>
+          <p><small class="text-muted"><app-date-since [date]="event.date"></app-date-since></small></p>
+        </div>
+        <div class="timeline-body">
+          <app-status-badge [status]="event.code"></app-status-badge>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

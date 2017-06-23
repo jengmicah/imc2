@@ -1,0 +1,12 @@
+<h3>My Medications</h3>
+
+<div *ngFor="let medication of medications" class="row">
+  <div class="col-6" [class.selected]="selectedId === medication.id">
+    <span (click)="onSelect(medication)" class="selectable">
+    {{medication.product.brand}} {{medication.product.packaging}} {{medication.product.amount}}
+    </span>
+  </div>
+  <div class="col-6">
+    <app-status-badge [status]="medication.latest_status"></app-status-badge>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div>
+  <div class="title">
+    <div class="row">
+      <div class="col-4">
+        <br/>
+        <img src="/assets/images/abbvie_logo.svg"/>
+      </div>
+      <div class="col-4">
+        <br/>
+        <h1>Personal Dashboard</h1>
+      </div>
+      <div class="col-4 text-right">
+        <img src="/assets/images/iMC2_logo.png" width="150"/>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard">
+    <div class="row">
+      <div class="col-6">
+        <app-registry (select)="onMedicationSelection($event)">
+        </app-registry>
+      </div>
+      <div class="col-6">
+        <app-timeline [medication]="medication"></app-timeline>
+      </div>
+    </div>
+  </div>
+</div>

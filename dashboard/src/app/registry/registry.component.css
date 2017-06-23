@@ -1,0 +1,13 @@
+h3 {
+    border-bottom-width: thin;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+.selected {
+    background-color: lightgreen;
+}
+
+.selectable {
+    cursor: pointer;
+}
