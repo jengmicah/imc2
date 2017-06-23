@@ -22,7 +22,11 @@ export class RegistryComponent implements OnInit {
   }
 
   getMedications() {
+    console.log("Get medications.");
     this.registryService.getMedications().then(medications => this.medications = medications);
+    setTimeout(() => {
+      this.getMedications()
+    }, 5000);
   }
 
   onSelect(medication: Medication) {
